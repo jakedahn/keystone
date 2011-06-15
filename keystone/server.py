@@ -659,7 +659,7 @@ class KeystoneAdminAPI(wsgi.Router):
         mapper.connect("/v2.0/users",
                     controller=user_controller,
                     action="create_user",
-                    conditions=dict(method=["PUT"]))
+                    conditions=dict(method=["POST"]))
         mapper.connect("/v2.0/users",
                     controller=user_controller,
                     action="get_users",
